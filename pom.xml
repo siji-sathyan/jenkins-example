@@ -63,10 +63,18 @@
     </repositories>
 
     <distributionManagement>
-        <repository>
-            <id>myMavenRepo.write</id>
-            <url>https://mymavenrepo.com/repo/9Q8JoRpymi4UGK8HzbVq/</url>
-        </repository>
-    </distributionManagement>
+
+    <repository>
+        <id>releases</id>
+        <name>Releases</name>
+        <url>https://github.com/Devu0704/jenkins-example.git</url>
+    </repository>
+
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>Snapshots</name>
+        <url>https://github.com/Devu0704/jenkins-example.git</url>
+    </snapshotRepository>
+</distributionManagement>
 
 </project>
