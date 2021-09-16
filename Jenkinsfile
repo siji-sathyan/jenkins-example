@@ -25,6 +25,7 @@ pipeline {
             steps {
                 withMaven(maven : 'MAVEN') {
                     bat 'mvn package -X'
+                    archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
                 }
             }
         }
