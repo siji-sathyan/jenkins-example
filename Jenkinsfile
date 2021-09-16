@@ -24,7 +24,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
                 withMaven(maven : 'MAVEN') {
-                    bat 'mvn pacage -X'
+                    bat 'mvn package -X'
                 }
             }
         }
